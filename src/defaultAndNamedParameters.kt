@@ -1,7 +1,9 @@
 
 
 fun main(){
+    searchFor(searchEngine = "Bing",search ="Test")
     searchFor("Google","Bing")
+
     val search = readln()
     searchFor(search)
 }
