@@ -1,7 +1,7 @@
 
 
 fun search(list: List<Int>,num:Int):Int{
-    for(i in 1..list.size-1)
+    for(i in 0 until list.size-1)
         if(list[i]==num)
             return i
     return -1
