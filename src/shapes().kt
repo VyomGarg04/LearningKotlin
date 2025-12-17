@@ -23,4 +23,17 @@ fun main(){
     val myCircle = Circle(r)
     //all print lines are initialized in the init in circle class
 
+    println("-------------------------------------------------------------------")
+    //triangle
+    println("Shape 3 - Triangle")
+    println("Enter three sides of the Triangle")
+    println("Enter side 1")
+    val s1 = readln().toDouble()
+    println("Enter side 2")
+    val s2 = readln().toDouble()
+    println("Enter side 3")
+    val s3 = readln().toDouble()
+    val myTriangle = Triangle(s1,s2,s3)
+    //all print lines are initialized in the init in circle class
+
 }
