@@ -1,15 +1,15 @@
 class Circle(
     val rad: Double
-) {
+):Shape("Circle") {
 
-    val pi = 3.141592
+    private val pi = 3.141592 //cannot access the value of pi outside this class
 
     init{
-        println("Circle created with radius =$rad")
+        println("$name created with radius =$rad")
 
-        println("Diameter of the Circle = ${diameter()}")
-        println("Area of the Circle = ${area()}")
-        println("Perimeter of the Circle = ${peri()}")
+        println("Diameter of the $name = ${diameter()}")
+        println("Area of the $name = ${area()}")
+        println("Perimeter of the $name = ${peri()}")
     }
 
     fun diameter() = 2*rad

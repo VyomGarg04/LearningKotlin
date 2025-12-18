@@ -12,7 +12,11 @@ fun main(){
     val myRect = Rectangle(l,b)
     println("Area = ${myRect.area()}")
     println("Perimeter = ${myRect.peri()}")
-    if(myRect.isSquare()) println("Rectangle is a square")
+    if(myRect.isSquare()){
+        println("Rectangle is a square")
+        myRect.changeName("Square")
+        println("New name of the shape - ${myRect.name}")
+    }
     else println("Rectangle is not a square")
 
     println("-------------------------------------------------------------------")

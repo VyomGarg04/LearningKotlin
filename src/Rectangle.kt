@@ -1,9 +1,9 @@
 class Rectangle(
     val l: Double,
     val b: Double
-) {
+):Shape("Rectangle") {
     init{
-        println("Rectangle created with length = $l and breadth = $b")
+        println("$name created with length = $l and breadth = $b")
     }
 
     fun area() = l*b
