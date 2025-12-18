@@ -16,9 +16,9 @@ class Triangle(
         }
     }
 
-    fun peri() = s1 + s2 + s3
+    override fun peri() = s1 + s2 + s3
 
-    fun area(): Double {
+    override fun area(): Double {
         val p = peri() / 2
         return sqrt(p * (p - s1) * (p - s2) * (p - s3))
     }

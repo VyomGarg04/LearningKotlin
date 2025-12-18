@@ -13,8 +13,6 @@ class Circle(
     }
 
     fun diameter() = 2*rad
-
-    fun area() = rad*rad*pi
-
-    fun peri() = 2*rad*pi
+    override fun area() = rad*rad*pi
+    override fun peri() = 2*rad*pi
 }

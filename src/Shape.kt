@@ -1,4 +1,5 @@
-open class Shape(
+abstract class Shape(
+    //open for normal superclass
     var name:String
 ) {
 
@@ -9,4 +10,7 @@ open class Shape(
     fun changeName(newName: String){
         name = newName
     }
+
+    abstract fun area(): Double
+    abstract fun peri(): Double
 }

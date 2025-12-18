@@ -6,10 +6,8 @@ class Rectangle(
         println("$name created with length = $l and breadth = $b")
     }
 
-    fun area() = l*b
-
-    fun peri() = 2*(l+b)
-
+    override fun area() = l*b
+    override fun peri() = 2*(l+b)
     fun isSquare() = l==b
 
 }
