@@ -4,18 +4,16 @@ fun main(){
 
     //rectangle
     println("Shape 1 - Rectangle")
-    println("Enter length of the Rectangle")
-    val l = readln().toDouble()
-    println("Enter breadth of the Rectangle")
-    val b = readln().toDouble()
 
-    val myRect = Rectangle(l,b)
-    println("Area = ${myRect.area()}")
-    println("Perimeter = ${myRect.peri()}")
-    if(myRect.isSquare()){
+    val myRect1 = Rectangle(6.0,3.5)
+    val myRect2 = Rectangle(6.0)
+    val myRect3 = Rectangle(3,4)
+    println("Area = ${myRect1.area()}")
+    println("Perimeter = ${myRect1.peri()}")
+    if(myRect1.isSquare()){
         println("Rectangle is a square")
-        myRect.changeName("Square")
-        println("New name of the shape - ${myRect.name}")
+        myRect1.changeName("Square")
+        println("New name of the shape - ${myRect1.name}")
     }
     else println("Rectangle is not a square")
 
