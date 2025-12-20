@@ -1,8 +1,15 @@
+import kotlin.random.Random
+
 class Circle(
     val rad: Double
 ):Shape("Circle") {
 
-
+    companion object{
+        fun randomCircle():Circle{
+            val rad = Random.nextDouble(1.0,10.0)
+            return Circle(rad)
+        }
+    }
 
     init{
         println("$name created with radius =$rad")
