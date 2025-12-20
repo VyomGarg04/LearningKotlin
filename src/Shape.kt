@@ -3,6 +3,9 @@ abstract class Shape(
     var name:String
 ) {
 
+    //for custom shapes
+    constructor(name: String,vararg dimensions: Double) : this(name)
+
     init{
         println("I am the super class!")
     }
