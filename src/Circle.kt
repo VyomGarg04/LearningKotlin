@@ -2,7 +2,7 @@ class Circle(
     val rad: Double
 ):Shape("Circle") {
 
-    private val pi = 3.141592 //cannot access the value of pi outside this class
+
 
     init{
         println("$name created with radius =$rad")
@@ -13,6 +13,6 @@ class Circle(
     }
 
     fun diameter() = 2*rad
-     override fun area() = rad*rad*pi
-    override fun peri() = 2*rad*pi
+     override fun area() = rad*rad*impNum.PI
+    override fun peri() = 2*rad*impNum.PI
 }
