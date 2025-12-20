@@ -1,4 +1,5 @@
 import kotlin.math.sqrt
+import kotlin.random.Random
 
 class Triangle(
     private val s1: Double,
@@ -7,6 +8,14 @@ class Triangle(
     //cannot access the values of sides outside this class
 ):Shape("Triangle") {
 
+    companion object{
+        fun randomTriangle():Triangle{
+            val s1 = Random.nextDouble()
+            val s2 = Random.nextDouble()
+            val s3 = Random.nextDouble()
+            return Triangle(s1,s2,s3)
+        }
+    }
     init {
         println("$name created with sides $s1, $s2, $s3")
         if (isValid()) {
