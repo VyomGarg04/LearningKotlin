@@ -1,5 +1,15 @@
+//import java.lang.Exception
+//import java.lang.NumberFormatException
 
 fun main(){
+//    println(divide(5.0,0.0))
+    val division = try {
+        divide(5.0,0.0)
+    }catch (e: DivisionByZeroException){
+        0.0
+    }
+    println("The result of division is $division")
+
 
     println("Enter a number : ")
     val input = try{
@@ -9,6 +19,7 @@ fun main(){
     }finally {
         println("This is from finally block")
     }
+    println("You entered $input")
 }
 
 
