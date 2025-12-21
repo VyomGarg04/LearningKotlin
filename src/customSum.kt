@@ -15,7 +15,7 @@ fun main(){
 }
 
 fun List<Int>.customSum(filterFunction: (Int) -> (Boolean)): Int {
-    val resultList = mutableListOf<Shape>()
+    
     var sum=0
     for (i in this) {
         if (filterFunction(i))
