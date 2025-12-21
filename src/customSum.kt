@@ -14,11 +14,11 @@ fun main(){
 
 }
 
-fun List<Int>.customSum(filterFunction: (Int) -> (Boolean)): Int {
-    
+fun List<Int>.customSum(customSum: (Int) -> (Boolean)): Int {
+
     var sum=0
     for (i in this) {
-        if (filterFunction(i))
+        if (customSum(i))
             sum += i
 
     }
